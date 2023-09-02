@@ -1,0 +1,31 @@
+###  test
+GET http://localhost:5555
+
+### all collections
+GET http://localhost:5555/books
+
+### get a book by id
+GET http://localhost:5555/books/64f1233a00d6a1751a317d31
+
+### create a book
+POST http://localhost:5555/books  HTTP/1.1
+content-type: application/json
+
+{
+  "title": "borrar",
+  "author": "J.R.R. Tolkien",
+  "publishYear": 1954
+}
+
+### update a book
+PUT http://localhost:5555/books/64f1233a00d6a1751a317d31 HTTP/1.1
+content-type: application/json
+
+{
+  "title": "El nombre de la rosa",
+  "author": "Umberto Eco",
+  "publishYear": 1981
+}
+
+### delet a book
+DELETE http://localhost:5555/books/64f221d3ad4f833f05efaf9c
