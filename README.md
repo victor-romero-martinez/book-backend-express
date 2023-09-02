@@ -3,7 +3,7 @@
 [Visit Frontend](https://github.com/victor-romero-martinez/book-frontend-vite)
 
 ```bash
-yarn run
+yarn dev
 ```
 
 - express
